@@ -2,7 +2,7 @@
 
 /**
  *
- *  * reset_to_98 - resets value in address referenced by pointer.
+ *   reset_to_98 - resets value in address referenced by pointer.
  *
  *   * @n: pointer.
  *
