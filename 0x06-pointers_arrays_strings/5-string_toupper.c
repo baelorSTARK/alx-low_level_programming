@@ -4,50 +4,36 @@
 
 /**
  *
- *  * reverse_array - reverse
+ *  * string_toupper - lower to upper
  *
- *   * @a : pointer to int params
+ *   * @s: pointer to char params
  *
- *    * @n : pointer to int params
+ *    *
  *
- *     * Return: no
+ *     * Return: *s
  *
  *      */
 
 
 
-void reverse_array(int *a, int n)
+char *string_toupper(char *s)
 
 {
 
-	int i;
-
-	int j;
-
-	int tmp;
+		int i;
 
 
 
-	i = 0;
+			for (i = 0; s[i] != '\0'; i++)
 
-	j = n - 1;
+					{
 
+								if (s[i] >= 'a' && s[i] <= 'z')
 
+												s[i] -= 32;
 
-	while (i < j)
+									}
 
-	{
-
-		tmp = a[i];
-
-		a[i] = a[j];
-
-		a[j] = tmp;
-
-		i++;
-
-		j--;
-
-	}
+				return (s);
 
 }
